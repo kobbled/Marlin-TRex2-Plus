@@ -861,16 +861,18 @@
   //========================= Unified Bed Leveling ============================
   //===========================================================================
 
-  #define UBL_MESH_INSET_X 50          // Mesh inset margin on print area
-  #define UBL_MESH_INSET_Y 0 
+  //#define UBL_MESH_INSET_X 50          // Mesh inset margin on print area
+  //#define UBL_MESH_INSET_Y 0
+  #define UBL_MESH_INSET_X 100          // Mesh inset margin on print area
+  #define UBL_MESH_INSET_Y 80  
   #define GRID_MAX_POINTS_X 15      // Don't use more than 15 points per axis, implementation limited.
   #define GRID_MAX_POINTS_Y GRID_MAX_POINTS_X
-  #define UBL_PROBE_PT_1_X 30       // These set the probe locations for when UBL does a 3-Point leveling
-  #define UBL_PROBE_PT_1_Y 365      // of the mesh.
-  #define UBL_PROBE_PT_2_X 30
-  #define UBL_PROBE_PT_2_Y 30
-  #define UBL_PROBE_PT_3_X 365
-  #define UBL_PROBE_PT_3_Y 30
+  #define UBL_PROBE_PT_1_X 50       // These set the probe locations for when UBL does a 3-Point leveling
+  #define UBL_PROBE_PT_1_Y 345      // of the mesh.
+  #define UBL_PROBE_PT_2_X 50
+  #define UBL_PROBE_PT_2_Y 50
+  #define UBL_PROBE_PT_3_X 345
+  #define UBL_PROBE_PT_3_Y 50
   //#define UBL_G26_MESH_EDITING    // Enable G26 mesh editing
 
 #elif ENABLED(MESH_BED_LEVELING)
